@@ -17,7 +17,7 @@ mvn spring-boot:run -f server/pom.xml
 
 ## Frontend
 
-The frontend source is located in the `client` directory and uses [Vite](https://vitejs.dev/) with Vue 3.
+The frontend source is located in the `client` directory and uses [Vite](https://vitejs.dev/) with Vue 3. A minimal [Tailwind CSS](https://tailwindcss.com/) build is loaded from a CDN to provide modern styling without extra setup.
 
 To start the frontend in development mode:
 
