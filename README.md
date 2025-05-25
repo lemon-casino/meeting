@@ -17,7 +17,7 @@ mvn spring-boot:run -f server/pom.xml
 
 ## Frontend
 
-The frontend source is located in the `client` directory and uses [Vite](https://vitejs.dev/) with Vue 3.
+
 
 To start the frontend in development mode:
 
@@ -25,7 +25,5 @@ To start the frontend in development mode:
 npm install
 npm run dev
 ```
-
-Dependencies include `@vitejs/plugin-vue` for Vue support and Tailwind CSS via CDN for quick styling.
 
 This project currently contains only minimal functionality as a starting point for further development of remote meeting features.

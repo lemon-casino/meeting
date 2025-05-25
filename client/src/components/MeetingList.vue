@@ -9,6 +9,7 @@
       <li v-for="m in meetings" :key="m.id" class="flex items-center justify-between bg-gray-100 p-2 rounded">
         <span>{{ m.title }} ({{ m.participants.length }} participants)</span>
         <button @click="join(m.id)" class="text-sm text-blue-600 underline">Join</button>
+
       </li>
     </ul>
   </div>
