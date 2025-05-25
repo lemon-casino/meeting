@@ -27,6 +27,7 @@
         >
           Join
         </button>
+
       </li>
     </ul>
   </div>
