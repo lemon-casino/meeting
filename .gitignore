@@ -1,8 +1,0 @@
-# Maven
-server/target/
-
-# Node
-client/node_modules/
-
-# Logs
-*.log
