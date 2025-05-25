@@ -1,32 +1,14 @@
 <template>
   <div class="max-w-xl mx-auto p-4">
     <h1 class="text-2xl font-bold mb-4">Meetings</h1>
-    <form @submit.prevent="createMeeting" class="flex gap-2 mb-4">
-      <input
-        v-model="title"
-        placeholder="Meeting title"
-        class="flex-1 border rounded px-2 py-1"
-      />
-      <button type="submit" class="bg-green-500 text-white px-4 py-1 rounded">
-        Create
-      </button>
+    <form class="flex mb-4" @submit.prevent="createMeeting">
+      <input v-model="title" placeholder="Meeting title" class="flex-1 border rounded-l px-2 py-1" />
+      <button type="submit" class="bg-blue-600 text-white px-4 rounded-r">Create</button>
     </form>
     <ul class="space-y-2">
-      <li
-        v-for="m in meetings"
-        :key="m.id"
-        class="bg-white shadow p-4 rounded flex justify-between items-center"
-      >
-        <div>
-          <p class="font-semibold">{{ m.title }}</p>
-          <p class="text-sm text-gray-500">{{ m.participants.length }} participants</p>
-        </div>
-        <button
-          @click="join(m.id)"
-          class="bg-blue-500 text-white rounded px-3 py-1 hover:bg-blue-600"
-        >
-          Join
-        </button>
+      <li v-for="m in meetings" :key="m.id" class="flex items-center justify-between bg-gray-100 p-2 rounded">
+        <span>{{ m.title }} ({{ m.participants.length }} participants)</span>
+        <button @click="join(m.id)" class="text-sm text-blue-600 underline">Join</button>
 
       </li>
     </ul>
